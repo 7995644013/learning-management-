@@ -1,0 +1,150 @@
+.cheatsheet {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.cheatsheet-header {
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, var(--accent-soft) 0%, rgba(139, 92, 246, 0.08) 100%);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.cheatsheet-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.cheatsheet-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+  letter-spacing: -0.02em;
+}
+
+.cheatsheet-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.cheatsheet-sections {
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.cheatsheet-section {
+  margin-bottom: 1.25rem;
+}
+
+.cheatsheet-section:last-child {
+  margin-bottom: 0;
+}
+
+.cheatsheet-section-title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.02em;
+}
+
+.cheatsheet-points {
+  margin: 0 0 0.75rem 0;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.cheatsheet-points li {
+  margin-bottom: 0.25rem;
+}
+
+.cheatsheet-code-wrap {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.cheatsheet-copy {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background: var(--surface-hover);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cheatsheet-copy:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.cheatsheet-code {
+  margin: 0;
+  padding: 1rem 1rem 1rem 1rem;
+  padding-right: 4rem;
+  background: #0c0c12;
+  color: #e2e8f0;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  font-family: ui-monospace, 'SF Mono', Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+.cheatsheet-code code {
+  white-space: pre;
+}
+
+@media (max-width: 768px) {
+  .cheatsheet-header {
+    padding: 1rem 1.25rem;
+  }
+  .cheatsheet-title {
+    font-size: 1.1rem;
+  }
+  .cheatsheet-sections {
+    padding: 1rem 1.25rem;
+  }
+  .cheatsheet-section-title {
+    font-size: 0.9rem;
+  }
+  .cheatsheet-points {
+    font-size: 0.85rem;
+  }
+  .cheatsheet-code {
+    padding: 0.75rem;
+    padding-right: 3.5rem;
+    font-size: 0.75rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .cheatsheet-copy {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cheatsheet {
+    margin-top: 1.5rem;
+  }
+}

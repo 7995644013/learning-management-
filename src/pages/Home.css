@@ -1,0 +1,324 @@
+/* BYJU's-style home */
+
+.home.byjus-style .section {
+  padding: 3rem 0;
+}
+
+.home.byjus-style .section-title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+/* Hero */
+.hero-byjus {
+  background: linear-gradient(180deg, rgba(129, 53, 136, 0.08) 0%, var(--bg) 100%);
+  text-align: center;
+  padding: 4rem 0 5rem;
+}
+
+.hero-byjus-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.hero-byjus-subtitle {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.hero-byjus-tagline {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 640px;
+  margin: 0 auto 1.75rem;
+  line-height: 1.7;
+}
+
+.hero-cta {
+  padding: 0.9rem 1.75rem;
+  font-size: 1rem;
+  border-radius: var(--radius);
+}
+
+/* Stats strip */
+.stats-strip {
+  background: var(--accent);
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-value {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  .stat-value {
+    font-size: 1.5rem;
+  }
+}
+
+/* Advantage cards */
+.section-advantage {
+  background: var(--bg-subtle);
+}
+
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.advantage-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.advantage-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 32px 0 rgba(129, 53, 136, 0.2);
+  transform: translateY(-4px);
+}
+
+.advantage-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+}
+
+.advantage-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .advantage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Testimonials */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.testimonial-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 32px 0 rgba(129, 53, 136, 0.2);
+  transform: translateY(-4px);
+}
+
+.testimonial-quote {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.testimonial-author {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Course cards - light theme */
+.home.byjus-style .course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.home.byjus-style .course-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: block;
+  color: var(--text);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.home.byjus-style .course-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px 0 rgba(129, 53, 136, 0.2);
+}
+
+.home.byjus-style .course-card-image {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.home.byjus-style .course-card-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.2) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.home.byjus-style .course-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.home.byjus-style .course-card:hover .course-card-image img {
+  transform: scale(1.05);
+}
+
+.home.byjus-style .course-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  z-index: 1;
+}
+
+.home.byjus-style .course-card-body {
+  padding: 1.35rem;
+}
+
+.home.byjus-style .course-category {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.home.byjus-style .course-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0.4rem 0 0.5rem;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.home.byjus-style .course-card-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.home.byjus-style .course-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.section-cta {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-byjus {
+    padding: 3rem 0 4rem;
+  }
+  .hero-byjus-title {
+    font-size: clamp(1.6rem, 6vw, 2.25rem);
+  }
+  .hero-byjus-subtitle {
+    font-size: 1.15rem;
+  }
+  .hero-byjus-tagline {
+    font-size: 1rem;
+  }
+  .home.byjus-style .section {
+    padding: 2rem 0;
+  }
+  .home.byjus-style .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .home.byjus-style .course-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-cta {
+    margin-top: 1.75rem;
+  }
+}
