@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Home, Library, GraduationCap, Code, Play, FileCode2, Bot, Menu, X } from 'lucide-react'
+import { Home, Library, GraduationCap, Code, Play, FileCode2, Bot, Menu, X, User } from 'lucide-react'
 import './Layout.css'
 
 export default function Layout({ children }) {
@@ -40,6 +40,7 @@ export default function Layout({ children }) {
         </div>
         <nav className="sidebar-nav">
           {navLink('/', <Home size={20} />, 'Home')}
+          {navLink('/profile', <User size={20} />, 'My Profile')}
           {navLink('/courses', <Library size={20} />, 'Course Library')}
           {navLink('/bonus', <GraduationCap size={20} />, 'Bonus Courses')}
           {navLink('/playground', <Play size={20} />, 'Playground')}
